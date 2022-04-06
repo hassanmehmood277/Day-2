@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+  </head>
+  <body>
+    <script>
+      // If else practice
+
+      let age = 41;
+      if (age >= 18 && age <= 40) {
+        document.write("Your Are Eligible for your Identity card");
+      } else {
+        document.write("You are not Eligible");
+        document.write("<br>");
+        document.write("<br>");
+      }
+    </script>
+
+    <script>
+      // Switch Case Practice
+
+      switch ((day = 5)) {
+        case 1:
+          document.write("Its Monday");
+          break;
+        case 2:
+          document.write("Its Tuesday");
+          break;
+        case 3:
+          document.write("Its Wednesday");
+          break;
+        case 4:
+          document.write("Its Thursday");
+          break;
+        case 5:
+          document.write("Its Friday");
+          break;
+        case 6:
+          document.write("Its Saturday");
+          break;
+        case 7:
+          document.write("Its Sunday");
+          break;
+
+        default:
+          document.write("Please Enter a valid month number");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // While Loop Practice
+
+      let i = 0;
+      while (i < 10) {
+        document.write("The value of i is " + i);
+        i++;
+        document.write("<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // Do While Loop Practice
+
+      let j = 0;
+      do {
+        document.write("The value of j is " + j);
+        j++;
+        document.write("<br>");
+      } while (j < 10);
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // For Loop practice
+      const demo = [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+      ];
+      for (k = 0; k < demo.length; k++) {
+        document.write(demo[k]);
+        document.write("<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // For in loop practice
+      var obj = {
+        firstname: "Hassan",
+        lastname: "Mehmood",
+        gender: "Male",
+        religion: "Islam",
+        address: "Faisalabad",
+      };
+      for (index in obj) {
+        document.write(obj[index] + "<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // Break statement
+
+      for (i = 0; i < 10; i++) {
+        if (i == 5) {
+          break;
+        }
+        document.write("The number is " + i + "<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+      // Continue statement
+
+      for (j = 0; j < 10; j++) {
+        if (j == 5) {
+          continue;
+        }
+        document.write("The number is " + j + "<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // Constructor function practice
+
+      function Person(fname, lname, gender, religion) {
+        this.fname = fname;
+        this.lname = lname;
+        this.gender = gender;
+        this.religion = religion;
+      }
+
+      const male = new Person("John", "Smith", "Male", "Chris");
+      document.write(male.fname);
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // Object Literals
+      name = "Hassan";
+      gender = "Male";
+      var obj = {
+        name,
+        gender,
+      };
+      console.log(name);
+      console.log(gender);
+    </script>
+  </body>
+</html>
